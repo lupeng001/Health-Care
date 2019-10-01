@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.XingxiangActivity">
+    <recycler.coverflow.RecyclerCoverFlow
+        android:id="@+id/rcf_cinema_flow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_400"
+        />
+
+    <RelativeLayout
+        android:id="@+id/xingxiang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shapes">
+
+        <ImageView
+            android:id="@+id/image_pic"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@mipmap/my_icon_camera_n" />
+
+        <TextView
+            android:id="@+id/text_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="自定义形象照"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_people"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="让你的形象独一无二"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_131"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@mipmap/according_to_the_image" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/people_button"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_36"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:background="@drawable/button_tianchong"
+        android:text="完成设置"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

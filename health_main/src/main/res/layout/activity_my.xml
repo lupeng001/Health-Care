@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_260"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/people_image"
+                android:layout_width="@dimen/dp_240"
+                android:layout_height="@dimen/dp_240"
+                android:adjustViewBounds="true"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/my_back"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@mipmap/common_icon_back_black_n" />
+
+        <ImageView
+            android:id="@+id/system_message"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@mipmap/common_nav_message_black_n" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="查看资料"
+            android:textColor="#3087ea"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/my_material"
+            android:layout_width="@dimen/dp_13"
+            android:layout_height="@dimen/dp_13"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@mipmap/common_information_next_n" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_28"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapes">
+
+            <LinearLayout
+                android:id="@+id/my_history"
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="@dimen/dp_144"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_48"
+                    android:src="@mipmap/my_icon_historicalsss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_28"
+                    android:text="历史问诊"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:id="@+id/my_money"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_144"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:background="@drawable/shapes"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@mipmap/my_icon_wallet_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_28"
+                android:text="我的钱包"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/my_message_sure"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_144"
+            android:background="@drawable/shapes"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@mipmap/my_icon_recommendations_adopted_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_28"
+                android:text="被采纳建议"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_message"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_144"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:background="@drawable/shapes"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@mipmap/my_icon_automatic_response_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_28"
+                android:text="设置地洞回复"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

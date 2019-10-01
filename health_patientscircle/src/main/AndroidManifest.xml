@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bawei.com.health_patientscircle.activity">
+
+    <application>
+        <activity android:name=".AskActivity"/>
+        <activity android:name=".MessageActivity"/>
+        <activity android:name=".CircleInfoActivity"/>
+    </application>
+
+</manifest>

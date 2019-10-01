@@ -1,0 +1,1 @@
+include ':app', ':common', ':health_login', ':health_main', ':health_im', ':health_patientscircle'
